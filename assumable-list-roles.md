@@ -210,8 +210,8 @@ puts html
             "Effect": "Allow",
             "Action": "sts:AssumeRole",
             "Resource": [
-            	"arn:aws:iam::529105607725:role/list-iam-role-for-campers",
-            	"arn:aws:iam::527100417633:role/list-iam-role-for-campers"
+            	"arn:aws:iam::529105607725:role/list-iam-role-for-campers", #add role arn as needed
+            	"arn:aws:iam::527100417633:role/list-iam-role-for-campers" 
             ]
         }
     ]
