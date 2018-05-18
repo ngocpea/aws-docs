@@ -105,14 +105,14 @@ end
 
 def print()
   iam_assumable_roles_arn = [
-    'arn:aws:iam::700574780415:role/list-iam-roles-for-campers',
-    'arn:aws:iam::527100417633:role/list-iam-roles-for-campers',
-    'arn:aws:iam::529105607725:role/list-iam-roles-for-campers',
-    'arn:aws:iam::904324412205:role/list-iam-roles-for-campers',
-    'arn:aws:iam::226140413739:role/list-iam-roles-for-campers',
-    'arn:aws:iam::359618605424:role/list-iam-roles-for-campers',
-    'arn:aws:iam::514571838450:role/list-iam-roles-for-campers',
-    'arn:aws:iam::082134150143:role/list-iam-roles-for-campers'
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers',
+    'arn:aws:iam::{aws_account_id}:role/list-iam-roles-for-campers'
 ]
 
   iam_assumable_roles_arn.map do |item|
@@ -210,8 +210,8 @@ puts html
             "Effect": "Allow",
             "Action": "sts:AssumeRole",
             "Resource": [
-            	"arn:aws:iam::529105607725:role/list-iam-role-for-campers", #add role arn as needed
-            	"arn:aws:iam::527100417633:role/list-iam-role-for-campers" 
+            	"arn:aws:iam::{aws_account_id}:role/list-iam-role-for-campers", #add role arn as needed
+            	"arn:aws:iam::{aws_account_id}:role/list-iam-role-for-campers" 
             ]
         }
     ]
