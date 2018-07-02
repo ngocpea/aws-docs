@@ -159,7 +159,7 @@ puts html
 </html>
 ```
 
-— install cronjob: `0 * * * * ruby /home/ec2-user/aws-sdk/iam_list_iam.rb > /var/www/html/index.html` to output results into html page to be viewed once a day
+— install cronjob: `0 * * * * ruby /home/ec2-user/aws-sdk/iam_list_roles.rb > /var/www/html/index.html` to output results into html page to be viewed once a day
 
 #### in the aws console
 
